@@ -40,17 +40,18 @@ title: San Francisco 311 Cases
 
 
 
+
 <!-- SECTION 2: BUILD A SIMPLE CATEGORIES PAGE -->
 
-  <!-- 1. Add a new page called categories.md -->
+<!-- 1. Add a new page called categories.md -->
 
-  <!-- 2. Copy and paste these instructions onto that page -->
+<!-- 2. Copy and paste these instructions onto that page -->
 
-  <!-- 3. Add a query that pulls the category, request_type, and case count -->
+<!-- 3. Add a query that pulls the category, request_type, and case count -->
 
-  <!-- 4. Add a DataTable component that includes conditional formatting for the case count column (see https://docs.evidence.dev/components/data-table/#conditional-formatting) -->
+<!-- 4. Add a DataTable component that includes conditional formatting for the case count column (see https://docs.evidence.dev/components/data-table/#conditional-formatting) -->
 
-  <!-- 5. Add search to the table -->
+<!-- 5. Add search to the table -->
 
 <!-- END OF SECTION 2 -->
 
@@ -58,11 +59,11 @@ title: San Francisco 311 Cases
 
 <!-- SECTION 3: ADD INTERACTIVITY TO YOUR SUMMARY PAGE (INDEX.MD) -->
 
-  <!-- 1. Change your dimension grid to become an input by using the 'name' prop -->
+<!-- 1. Change your dimension grid to become an input by using the 'name' prop - call it 'dimensions' -->
 
-  <!-- 2. Then hook this up to the LineChart by adding a 'where' clause to your trend query -->
+<!-- 2. Then hook this up to the LineChart by adding a 'where' clause to your trend query. See docs here: https://docs.evidence.dev/components/dimension-grid/#as-an-input -->
 
-  <!-- 3. Add the input to the chart title so you get the context when the chart updates -->
+<!-- 3. Add the input to the chart title so you get the context when the chart updates. Inputs can be referenced in curly braces like: {inputs.my_input} -->
 
 <!-- END OF SECTION 3 -->
 
