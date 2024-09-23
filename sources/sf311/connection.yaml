@@ -1,0 +1,5 @@
+# This file was automatically generated
+name: sf311
+type: duckdb
+options:
+  filename: sf311.duckdb
