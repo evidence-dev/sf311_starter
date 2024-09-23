@@ -119,49 +119,6 @@ from sf311.cases
 
 
 
-<!-- SECTION 4: BUILD A NEIGHBORHOOD EXPLORER PAGE -->
-
-  <!-- 1. Add a folder called neighborhoods in your pages directory. Then add a file called index.md in that folder -->
-
-  <!-- 2. Copy and paste these instructions onto that page -->
-
-  <!-- 3. Add a page title -->
-
-  <!-- 4. Build a neighborhood map and make it an interactive input
-          - Start with a SQL query that gets neighborhood and case count - call the query 'neighborhoods'
-          - Add an AreaMap component pulling from that data
-          - Make the map an input using the 'name' prop - give it a name of 'map_input'
-  -->
-
-  <!-- 5. Set up a page title that changes to show the selected neighborhood name
-        - When not selected, the input will default to true
-        - You will need to use an if block (https://docs.evidence.dev/core-concepts/if-else/)
-        - Title should say "All Neighborhoods" when no neighborhood is selected
-  -->
-
-  <!-- 6. Set up a query to get the case trend for the selected neighborhood. 
-          - Name the query 'filtered_trend'
-          - Get the week and case count for that specific neighborhood using a where clause
-          - See here for an example: https://docs.evidence.dev/components/area-map/#use-map-as-input
-          - Note that you will need to handle the situation where no neighborhood is selected (the input will return true in that case)
-  -->
-
-  <!-- 7. Add a LineChart to display the trend data from filtered_trend -->
-
-  <!-- 8. Put your AreaMap and LineChart into a Grid with 2 columns
-          - You can also give each a title by adding a header above them (e.g., put '### Neighborhood Selector' above the AreaMap)
-              - To avoid creating new Grid cells when appending content to a cell, you can use the Group component (https://docs.evidence.dev/components/grid/#group-component)
-  -->
-
-  <!-- 9. Add a category breakdown
-          - Create a query called category_breakdown which pulls the category and case count, filtered for the selected neighborhoood
-          - Add a DataTable to display the results and use conditional formatting for the case count column
-  -->
-
-<!-- END OF SECTION 4 -->
-
-
-
 <!-- SECTION 5: CREATE NEIGHBORHOOD TEMPLATED PAGE -->
 
   <!-- 1. Create links Evidence will use to auto-generate your templated pages when deploying
