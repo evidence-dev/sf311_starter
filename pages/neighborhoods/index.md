@@ -51,6 +51,8 @@
 
     # {inputs.map_input.neighborhood}
 
+    [See neighborhood deep dive &rarr;](./{inputs.map_input.neighborhood})
+
 {/if}
 
 ```sql neighborhoods
@@ -116,5 +118,12 @@ order by cases desc
 
 <DataTable data={category_breakdown}>
     <Column id=category/>
+    <Column id=cases contentType=colorscale/>
+</DataTable>
+
+## Neighborhood List
+
+<DataTable data={neighborhoods} link=neighborhood>
+    <Column id=neighborhood/>
     <Column id=cases contentType=colorscale/>
 </DataTable>
