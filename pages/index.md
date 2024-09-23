@@ -60,6 +60,7 @@ from sf311.cases
 select date_trunc('day', opened) as date,
 count(*) as cases
 from sf311.cases
+where ${inputs.dimensions}
 group by all
 order by date asc
 ```
@@ -90,7 +91,10 @@ select
 from sf311.cases 
 ```
 
-<DimensionGrid data={cases}/>
+<DimensionGrid 
+  data={cases}
+  name=dimensions
+/>
 
 <!-- 7. Add a CalendarHeatmap which uses your 'trend' query -->
 
@@ -110,8 +114,6 @@ from sf311.cases
 <!-- 1. Change your dimension grid to become an input by using the 'name' prop - call it 'dimensions' -->
 
 <!-- 2. Then hook this up to the LineChart by adding a 'where' clause to your trend query. See docs here: https://docs.evidence.dev/components/dimension-grid/#as-an-input -->
-
-<!-- 3. Add the input to the chart title so you get the context when the chart updates. Inputs can be referenced in curly braces like: {inputs.my_input} -->
 
 <!-- END OF SECTION 3 -->
 
