@@ -111,8 +111,6 @@ from sf311.cases
 
 <!-- 2. Then hook this up to the LineChart by adding a 'where' clause to your trend query. See docs here: https://docs.evidence.dev/components/dimension-grid/#as-an-input -->
 
-<!-- 3. Add the input to the chart title so you get the context when the chart updates. Inputs can be referenced in curly braces like: {inputs.my_input} -->
-
 <!-- END OF SECTION 3 -->
 
 
